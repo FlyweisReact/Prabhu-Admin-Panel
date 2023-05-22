@@ -243,7 +243,7 @@ const ManageWebinar = () => {
             </tr>
           </tbody>
         </Table>
-        </div>
+        </
       </div>
     </>
   );

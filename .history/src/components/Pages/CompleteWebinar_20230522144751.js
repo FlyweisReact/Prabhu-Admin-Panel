@@ -72,7 +72,7 @@ const CompleteWebinar = () => {
       <UploadInvoice show={modalShow} onHide={() => setModalShow(false)} />
       
       <div className="two-sec-head-2">
-        <div className="left-div">
+        <div className="left">
           <p>Completed Webinar</p>
         </div>
       </div>

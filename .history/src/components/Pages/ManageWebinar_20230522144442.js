@@ -98,7 +98,7 @@ const ManageWebinar = () => {
         <div className="ColorTable-head">
           <p>Manage Webinars</p>
         </div>
-        <div className="overflow-cont">
+        
         <Table className="ColorTable">
           <thead>
             <tr>
@@ -243,7 +243,6 @@ const ManageWebinar = () => {
             </tr>
           </tbody>
         </Table>
-        </div>
       </div>
     </>
   );

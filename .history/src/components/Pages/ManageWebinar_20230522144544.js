@@ -98,7 +98,7 @@ const ManageWebinar = () => {
         <div className="ColorTable-head">
           <p>Manage Webinars</p>
         </div>
-        <div className="overflow-cont">
+        <div className="-cont">
         <Table className="ColorTable">
           <thead>
             <tr>

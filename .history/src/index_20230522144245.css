@@ -2048,7 +2048,8 @@ p {
 }
 .mainTable {
   width: 100%;
-  padding: 20px;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 .ColorTable-head {
   background-color: #e2dede;
@@ -2070,6 +2071,7 @@ p {
   background: #eaeaea;
   width: 100%;
   border-radius: 0px;
+  /* table-layout: fixed; */
 }
 
 .ColorTable th {
@@ -2083,7 +2085,8 @@ p {
   color: #fff;
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 5px 10px 5px 10px;
+  width: 139px;
+  height: 37px;
 }
 .submit-btn {
   background-color: #000;
@@ -2111,6 +2114,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
+  line-height: 35px;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -2311,4 +2315,5 @@ p {
     width: 40px;
     height: 40px;
   }
+
 }

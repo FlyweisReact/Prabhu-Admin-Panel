@@ -2,6 +2,7 @@
 
 import React from "react";
 import HOC from "../Layout/HOC";
+import Navbar from "../Layout/navbar";
 import { Store } from "react-notifications-component";
 import { useNavigate } from "react-router-dom";
 

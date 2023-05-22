@@ -2070,6 +2070,7 @@ p {
   background: #eaeaea;
   width: 100%;
   border-radius: 0px;
+  ta
 }
 
 .ColorTable th {
@@ -2111,6 +2112,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
+  line-height: 35px;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;

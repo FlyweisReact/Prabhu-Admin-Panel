@@ -24,7 +24,7 @@
 
   .logo h3 {
     position: relative;
-    font-size: var(--sm-heading-font-size);
+    font-size: 24px;
   }
   .main-cont-right {
     width: 100%;
@@ -46,7 +46,6 @@
   .main-cont .main-cont-right .main-cont-right-1 .fgpass {
     margin-top: 10px;
     margin-right: 5%;
-    font-size: var(--sm-font-size);
   }
   .main-cont .main-cont-right .main-cont-right-1 button {
     width: 90%;
@@ -54,7 +53,7 @@
     margin-top: 10px;
   }
   .New-navbar .right .text-div p {
-    font-size:var(--sm-font-size);
+    font-size: 16px;
   }
   .two-sec-head {
     padding-top: 20px;
@@ -92,7 +91,10 @@
   .ColorTable-head p {
     font-size: var(--sm-heading-font-size);
   }
-
+  /* .ColorTable {
+    table-layout: auto;
+    width: 90%;
+  } */
   .ColorTable button {
     font-size: var(--sm-font-size);
     width: 100%;
@@ -156,6 +158,14 @@
     margin: 0;
     padding: 10px;
   }
+  /* .mainTable .ColorTable {
+    table-layout: auto;
+    overflow: auto;
+    width: 100%;
+  }
+  .mainTable .ColorTable button {
+    width: 100%;
+  } */
 
   /* ----------------------------------------- */
   .profileId {
@@ -235,48 +245,32 @@
     font-size: var(--sm-font-size);
   }
 
-  /* --------------------- */
-  .two-sec-head-2 {
-    display: block;
-    padding-top: 20px;
-  }
-  .two-sec-head-2 .left-div {
-    width: 100%;
-  }
-  .two-sec-head-2 .left-div p {
-    font-size: var(--sm-heading-font-size);
-  }
-  .two-sec-head-2 .right {
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 10px;
-  }
-  .two-sec-head-2 .right .addbtn {
-    width: 100%;
-    margin: 0;
-  }
-  .two-sec-head-2 .right .filter {
-    margin: 0;
-    margin-top: 10px;
-    width: 100%;
-  }
 
-  /* -------------------------- */
-  .Question-Div {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
-  .Question-Div p {
-    font-size: var(--sm-font-size);
-    margin: 0;
-    max-width: 100%;
-  }
-  .Question-Div .answer {
-    width: 100%;
-  }
-  .Question-Div button {
-    font-size: var(--sm-font-size);
-  }
+  /* --------------------- */
+    .two-sec-head-2{
+        display: block;
+        padding-top: 20px;
+    }
+    .two-sec-head-2 .left-div {
+        width: 100%;
+
+    }
+    .two-sec-head-2 .left-div p{
+        font-size: var(--sm-heading-font-size);
+    }
+    .two-sec-head-2 .right {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
+    .two-sec-head-2 .right .addbtn{
+        width: 100%;
+        margin: 0;
+    }
+    .two-sec-head-2 .right  .filter {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
 }

@@ -102,7 +102,6 @@ const PaymentDetails = () => {
                 </tr>
               </tbody>
             </Table>
-            </div>
           </div>
         </div>
       </div>
