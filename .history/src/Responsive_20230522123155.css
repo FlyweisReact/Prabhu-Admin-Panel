@@ -1,0 +1,11 @@
+@media (max-width : 768px) {
+    .main-cont{
+        display: block;
+    }    
+    .main-cont-left{
+        width: 100%;
+    }
+    .logo{
+        width: 200px;
+    }
+}

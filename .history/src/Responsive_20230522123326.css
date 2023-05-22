@@ -1,0 +1,19 @@
+@media (max-width : 768px) {
+    .main-cont{
+        display: block;
+    }    
+    .main-cont-left{
+        width: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+    .logo h3{
+        position: relative;
+    }
+    .main-cont-right-1{
+        position: relative;
+    }
+    
+}
