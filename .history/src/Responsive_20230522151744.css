@@ -303,6 +303,7 @@
   .bar-two .right{
     width: 100%;
     margin-top: 10px;
+    padding: 10px;
   }
 }
 

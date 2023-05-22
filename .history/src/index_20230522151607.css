@@ -2175,28 +2175,28 @@ p {
   padding-right: 5%;
   margin-top: 2%;
 }
-.bar-two .left-div {
+.bar-two .left {
   width: 50%;
   border-radius: 20px;
   padding: 20px;
   background-color: #e7e7e7;
 }
-.bar-two .left-div .three-sec {
+.bar-two .left .three-sec {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.bar-two .left-div .three-sec div {
+.bar-two .left .three-sec div {
   text-align: center;
 }
-.bar-two .left-div .three-sec div img {
+.bar-two .left .three-sec div img {
   width: 60px;
   height: 60px;
   border-radius: 100%;
 }
-.bar-two .left-div .two-sec {
+.bar-two .left .two-sec {
   display: flex;
   justify-content: space-between;
 }

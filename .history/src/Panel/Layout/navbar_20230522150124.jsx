@@ -5,7 +5,6 @@ import img from "../../Images2/e6.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { Store } from 'react-notifications-component';
-import { MobileSidebar } from "./Mobile-sidebar";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -30,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div className="New-navbar">
-        <MobileSidebar />
+      
         <div className="left">
           <div className="searchDiv">
             <i className="fa-solid fa-magnifying-glass"></i>

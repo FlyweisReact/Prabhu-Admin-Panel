@@ -2196,7 +2196,7 @@ p {
   height: 60px;
   border-radius: 100%;
 }
-.bar-two .left-div .two-sec {
+.bar-two .left .two-sec {
   display: flex;
   justify-content: space-between;
 }

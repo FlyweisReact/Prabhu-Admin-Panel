@@ -234,7 +234,6 @@ const Webinar = () => {
             </tr>
           </tbody>
         </Table>
-        </div>
       </div>
     </>
   );

@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <img src={img} alt="" className="notificationImage" />
-          <img src='https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1020' style={{borderRadius : '100%'}} alt="" className="profileImage" />
+          <img src='https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1020'  alt="" className="profileImage" />
           <div className="text-div">
             <p>Naina Sharma</p>
             <p>Account Manager Logged in</p>

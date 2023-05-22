@@ -42,7 +42,7 @@ const Review = () => {
       </div>
 
       <div className="bar-two">
-        <div className="left-div">
+        <div className="left">
           <div className="two-sec">
             <p>TOP PERFORMING SPEAKER</p>
 

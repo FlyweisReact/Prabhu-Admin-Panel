@@ -89,7 +89,6 @@ const Webinar = () => {
         <div className="ColorTable-head">
           <p>Suggest Webinar Topic</p>
         </div>
-        <div className="overflow-cont">
         <Table className="ColorTable">
           <thead>
             <tr>
@@ -234,7 +233,6 @@ const Webinar = () => {
             </tr>
           </tbody>
         </Table>
-        </div>
       </div>
     </>
   );

@@ -72,7 +72,7 @@ const CompleteWebinar = () => {
       <UploadInvoice show={modalShow} onHide={() => setModalShow(false)} />
       
       <div className="two-sec-head-2">
-        <div className="left-div">
+        <div className="left">
           <p>Completed Webinar</p>
         </div>
       </div>
@@ -81,7 +81,6 @@ const CompleteWebinar = () => {
         <div className="ColorTable-head">
           <p>Completed Webinars</p>
         </div>
-        <div className="overflow-cont">
         <Table className="ColorTable">
           <thead>
             <tr>
@@ -231,7 +230,6 @@ const CompleteWebinar = () => {
             </tr>
           </tbody>
         </Table>
-        </div>
       </div>
     </>
   );

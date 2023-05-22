@@ -128,7 +128,6 @@ const DashBoard = () => {
                 ))}
               </tbody>
             </Table>
-            </div>
           </div>
         </div>
       </div>

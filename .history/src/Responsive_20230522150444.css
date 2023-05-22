@@ -283,26 +283,6 @@
 
 
   /*------------------- */
-  .New-navbar .right {
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  /* -------------- */
-  .bar{
-    width: 100%;
-    margin: 0;
-  }
-  .bar-two{
-    display: block;
-  }
-  .bar-two .left-div{
-    width: 100%;
-  }
-  .bar-two .right{
-    width: 100%;
-    margin-top: 10px;
-  }
+  .New-navbar
 }
 

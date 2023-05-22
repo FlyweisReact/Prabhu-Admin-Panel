@@ -5,7 +5,7 @@ import img from "../../Images2/e6.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { Store } from 'react-notifications-component';
-import { MobileSidebar } from "./Mobile-sidebar";
+import { MobileSidebar } from "../../components/Layout/Mobile-sidebar";
 
 const Navbar = () => {
   const navigate = useNavigate();

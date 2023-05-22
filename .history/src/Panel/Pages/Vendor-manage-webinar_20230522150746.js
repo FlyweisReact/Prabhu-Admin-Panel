@@ -2,18 +2,21 @@
 
 import React, { useState } from "react";
 import HOC from "../Layout/HOC";
-import { Table, Modal, Form, FloatingLabel } from "react-bootstrap";
+import { Table, Modal, Form } from "react-bootstrap";
+import img from ".././../Images/Edit.png";
 import { Store } from "react-notifications-component";
+import { useNavigate } from "react-router-dom";
 
-const Webinar = () => {
+const ManageWebinar = () => {
   const [modalShow, setModalShow] = useState(false);
+  const navigate = useNavigate();
 
-  function MyVerticallyCenteredModal(props) {
-    const AddWebinar = async () => {
+  function RescheduleEvent(props) {
+    const postHandler = async () => {
       try {
         Store.addNotification({
           title: "Created",
-          message: "Webinar Created ",
+          message: "Rescheduled Event ",
           type: "success",
           insert: "top",
           container: "top-right",
@@ -39,31 +42,29 @@ const Webinar = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Add Webinar
+            Reschedule Event
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3">
-              <Form.Label>Webinar Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter Webinar Name" />
+              <Form.Label>Webinar Title</Form.Label>
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Description</Form.Label>
-              <FloatingLabel controlId="floatingTextarea2" label="Description">
-                <Form.Control
-                  as="textarea"
-                  placeholder="Leave a comment here"
-                  style={{ height: "100px" }}
-                />
-              </FloatingLabel>
+              <Form.Label>Live Date</Form.Label>
+              <Form.Control type="date" />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Time</Form.Label>
+              <Form.Control type="time" />
             </Form.Group>
             <button
               className="submit-btn"
               type="button"
-              onClick={() => AddWebinar()}
+              onClick={() => postHandler()}
             >
-              Submit for Approval
+              Save
             </button>
           </Form>
         </Modal.Body>
@@ -73,30 +74,40 @@ const Webinar = () => {
 
   return (
     <>
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
+      <RescheduleEvent show={modalShow} onHide={() => setModalShow(false)} />
+      <div className="two-sec-head-2">
+        <div className="left">
+          <p>Manage Webinar</p>
+        </div>
 
-      <div className="two-sec-head">
-        <p>Suggest Webinar Topic</p>
-        <button onClick={() => setModalShow(true)}>
-          <i className="fa-solid fa-plus"></i>Add Webinar Topic
-        </button>
+        <div className="right">
+          <p className="specialText" onClick={() => setModalShow(true)}>
+            Rescheduled Event
+          </p>
+          <button className="addbtn" onClick={() => navigate("/vendor-add")}>
+            <i className="fa-solid fa-plus"></i>Add New Webinar
+          </button>
+          <div className="filter">
+            <i class="fa-solid fa-filter"></i>
+            <p>Filter</p>
+          </div>
+        </div>
       </div>
 
       <div className="mainTable">
         <div className="ColorTable-head">
-          <p>Suggest Webinar Topic</p>
+          <p>Manage Webinars</p>
         </div>
         <div className="overflow-cont">
         <Table className="ColorTable">
           <thead>
             <tr>
-              <th>Webinar</th>
+              <th>Webinar Titles</th>
               <th> Description </th>
+              <th> Date </th>
+              <th> Time </th>
               <th> Status </th>
-              <th> Action </th>
+              <th> Edit </th>
             </tr>
           </thead>
           <tbody>
@@ -106,9 +117,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "green" }}>Approved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#F31111" }}>Pending</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -117,9 +130,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#2CAD0C" }}>Reviewed</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -128,9 +143,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "green" }}>Approved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#F31111" }}>Pending</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -139,9 +156,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#2CAD0C" }}>Reviewed</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -150,9 +169,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "green" }}>Approved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#F31111" }}>Pending</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -161,9 +182,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#2CAD0C" }}>Reviewed</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -172,9 +195,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "green" }}>Approved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#F31111" }}>Pending</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -183,9 +208,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#2CAD0C" }}>Reviewed</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -194,9 +221,11 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "green" }}>Approved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#F31111" }}>Pending</td>
               <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
             <tr>
@@ -205,39 +234,19 @@ const Webinar = () => {
                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero
               </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
+              <td> 05.05.2023</td>
+              <td> 04:00 AM IST</td>
+              <td style={{ color: "#2CAD0C" }}>Reviewed</td>
               <td>
-                <button>Submit</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Cross Industry</td>
-              <td>
-                Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero
-              </td>
-              <td style={{ color: "green" }}>Approved</td>
-              <td>
-                <button>Submit</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Cross Industry</td>
-              <td>
-                Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero
-              </td>
-              <td style={{ color: "#F31111" }}>Disapproved</td>
-              <td>
-                <button>Submit</button>
+                <img src={img} alt="" />
               </td>
             </tr>
           </tbody>
         </Table>
-        </div>
+        </
       </div>
     </>
   );
 };
 
-export default HOC(Webinar);
+export default HOC(ManageWebinar);

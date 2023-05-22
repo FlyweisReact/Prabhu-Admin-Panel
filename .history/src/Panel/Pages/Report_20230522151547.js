@@ -4,6 +4,7 @@ import React from "react";
 import HOC from "../Layout/HOC";
 import CanvasJSReact from "@canvasjs/react-charts";
 import Dropdown from "react-bootstrap/Dropdown";
+import ReactApexChart from "react-apexcharts";
 
 const Review = () => {
   var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -42,7 +43,7 @@ const Review = () => {
       </div>
 
       <div className="bar-two">
-        <div className="left-div">
+        <div className="left">
           <div className="two-sec">
             <p>TOP PERFORMING SPEAKER</p>
 
